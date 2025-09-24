@@ -1,0 +1,45 @@
+# EDUCATIONAL .GITIGNORE
+# This file demonstrates git ignore patterns with detailed explanations for learning purposes.
+# In typical projects, these comments would be minimal, but our educational philosophy
+# prioritizes understanding over brevity. Each section explains both what files are excluded
+# and why excluding them follows development best practices.
+
+# DEPENDENCIES - Files installed by package managers
+# node_modules/ contains thousands of library files that npm/yarn downloads
+# These are huge, change frequently, and can be recreated from package.json
+node_modules/      # See comment above
+npm-debug.log*     # Error logs from npm (Node Package Manager)
+yarn-debug.log*    # Error logs from Yarn (alternative to npm)
+yarn-error.log*
+
+# ENVIRONMENT VARIABLES - Files containing sensitive information
+# .env files store API keys, passwords, database URLs - never commit these!
+# Each developer needs their own copy with their specific credentials
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# BUILD OUTPUTS - Generated files that get created from source code
+# /build contains the compiled/minified version of your React app
+# /dist is another common name for distribution/build files
+# These are recreated each time you build, so no need to store in git
+/build
+/dist
+
+# IDE FILES - Editor-specific configuration files
+# .vscode/ stores Visual Studio Code settings (personal preferences)
+# .idea/ stores JetBrains IDE settings (IntelliJ, WebStorm, etc.)
+# .swp/.swo are temporary files created by Vim text editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OPERATING SYSTEM FILES - Files your OS creates automatically
+# .DS_Store is created by macOS in every folder (stores folder view settings)
+# Thumbs.db is created by Windows (stores thumbnail cache)
+# These are system files that other developers don't need
+.DS_Store
+Thumbs.db
